@@ -41,6 +41,10 @@
     --colorWarning: orange;
 }
 
+body, html { 
+    overflow-x:hidden !important; 
+}
+
 /*----------------------------*/
 /*RESET*/
 /*----------------------------*/
@@ -63,10 +67,6 @@ body {
     margin: 0;
     overflow-x: hidden !important;
     background-color: var(--colorBody);
-}
-
-body-div {
-    overflow-x: hidden;
 }
 
 /*----------------------------*/
@@ -206,29 +206,24 @@ body-div {
 
 .translate-left {
     transform: translateX(-200px);
-    overflow-x: hidden !important;
 }
 
 .translate-right {
     transform: translateX(200px);
-    overflow-x: hidden !important;
 }
 
 .translate-up {
     transform: translatey(80px);
-    overflow-x: hidden !important;
 }
 
 .translate-down {
     transform: translatey(-80px);
-    overflow-x: hidden !important;
 }
 
 .show {
     opacity: 1 !important;
     filter: none;
     transform: translateX(0);
-    overflow-x: hidden !important;
 }
 
 @media(prefers-reduced-motion) {
@@ -554,7 +549,6 @@ header {
 /*----------------------------*/
 #services {
     min-height: 500px;
-    overflow: hidden;
 }
 
 .bi-card-checklist {
