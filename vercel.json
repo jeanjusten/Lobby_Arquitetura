@@ -1,10 +1,5 @@
 {
     "rewrites": [
-        { "source": "/", "destination": "/index.html" },
-        { "source": "/contact", "destination": "/contact.html" },
-        { "source": "/style.css", "destination": "/public/style.css" },
-        { "source": "/script.js", "destination": "/public/script.js" },
-        { "source": "/app.js", "destination": "/public/app.js" },
-        { "source": "/emailjs.js", "destination": "/public/emailjs.js" }
+        { "source": "/", "destination": "/index.html" }
     ]
 }
