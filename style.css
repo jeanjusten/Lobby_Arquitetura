@@ -54,10 +54,6 @@
     font-style: normal;
 }
 
-html, body {
-    overflow-x: hidden;
-}
-
 /*----------------------------*/
 /*BODY*/
 /*----------------------------*/
@@ -226,6 +222,7 @@ body {
     opacity: 1 !important;
     filter: none;
     transform: translateX(0);
+    transform: translateY(0);
 }
 
 @media(prefers-reduced-motion) {
