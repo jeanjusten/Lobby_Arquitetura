@@ -41,10 +41,6 @@
     --colorWarning: orange;
 }
 
-body, html { 
-    overflow-x:hidden !important; 
-}
-
 /*----------------------------*/
 /*RESET*/
 /*----------------------------*/
@@ -202,6 +198,8 @@ body {
     opacity: 0 !important;
     transition: all 1.5s;
     filter: blur(5px);
+    contain: layout;
+    will-change: transform;
 }
 
 .translate-left {
