@@ -274,8 +274,9 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: var(--colorHeader);
+    background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
 }
 
 @media (max-width: 991px) {

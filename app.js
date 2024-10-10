@@ -3,9 +3,10 @@ const observer = new IntersectionObserver((entries) => { // Handles the visibili
     entries.forEach((entry) => {
         if (entry.isIntersecting) { // If element is visible in the viewport
             entry.target.classList.add("show");
-        } else { // Remove this section if i want the page to only load once after scrolling
-            entry.target.classList.remove("show");
-        }
+        } 
+        // else { // Remove this section if i want the page to only load once after scrolling
+          //  entry.target.classList.remove("show");
+        //}
     })
 })
 
