@@ -64,6 +64,16 @@
             });
         })();
     </script>
+
+    <script>
+        if (window.location.hostname !== "localhost") {
+            // If not local host, use absolute paths
+            document.getElementById("style-css").setAttribute("href", "/style.css");
+            document.getElementById("script-js").setAttribute("src", "/script.js");
+            document.getElementById("emailjs-js").setAttribute("src", "/emailjs.js");
+            document.getElementById("app-js").setAttribute("src", "/app.js");
+        }
+    </script>
 </head>
 
     <!--PAGE LOADER-->
