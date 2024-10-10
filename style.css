@@ -207,11 +207,11 @@ body {
 }
 
 .translate-left {
-    transform: translateX(-200px);
+    transform: translatey(-80px);
 }
 
 .translate-right {
-    transform: translateX(200px);
+    transform: translatey(80px);
 }
 
 .translate-up {
