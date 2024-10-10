@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!--META TAGS-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Projetos de Arquitetura e Interiores em Curitiba, São Mateus do Sul e região.">
+    <meta property="og:image" content="" />
+    <meta property="og:image:width" content="505" />
+    <meta property="og:image:height" content="459" />
+
+    <title>Lobby Arquitetura de Interiores</title>
+    <link rel="icon" href="./images/favicon.webp">
+
+    <link rel="preload" href="./public/style.css" as="style"> <!--Call to Main CSS preload-->
+    <link rel="preload" href="./Lib/bootstrap.min.css" as="style"> <!--Call to Bootstrap lib preload-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="./Lib/bootstrap.min.css"> <!--Bootstrap CSS backup-->
+    <link rel="stylesheet" href="./public/style.css"> <!--Main CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css"> <!--Bootstrap SVG-->
+    <script src="./public/script.js"></script>
+    <script defer src="./public/app.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"> //Email JS </script> -->
+    <!--JSON-LD-->
+    <script type="application/ld+json" defer>
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Lobby Arquitetura de Interiores",
+            "url": "https://lobby-arquitetura.vercel.app/",
+            "logo": "https://ugc.production.linktr.ee/9Cy2D28RO28UhxRUp2q0_r1iAYp4ZFwF2LdIg?io=true&size=avatar-v3_0",
+            "image": "",
+            "description": "Projetos de Arquitetura e Interiores em Curitiba, São Mateus do Sul e região.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Rua Ivan Ulbrich, 974",
+                "addressLocality": "São Mateus do Sul",
+                "addressRegion": "Paraná",
+                "postalCode": "83900-000",
+                "addressCountry": "BR"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+55-41-99759-7544",
+                "contactType": "Customer Service"
+            }
+        }
+    </script>
+
+    <!--Email JS script KEY-->
+    <!-- <script type="text/javascript">
+        (function() {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+            publicKey: "kGPFPWjqp-T9f7Dml", 
+            });
+        })();
+    </script> -->
+
+    <!--Google tag (gtag.js)-->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-##########"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-##########');
+    </script> 
+    -->
+    <!--<meta name="google-site-verification" content=""/> Google Search Console verification for indexing-->
+</head>
+
+<body>
+    <!--PAGE LOADER-->
+    <div class="loader"></div>
+
+    <!--CUSTOM ALERT BOX-->
+    <div id="customAlertBox" class="custom-alert">
+        <div class="custom-alert-content">
+            <span class="close">&times;</span>
+            <div class="d-flex flex-column justify-content-center">
+                <img src="/images/lobby motto.webp" alt="Logo da Lobby Arquitetura" id="brand-logo-popup" draggable="false" class="pb-1 mb-3">
+                <p id="alertMessage">
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--NAVBAR ACTIVE LINK SPY-->
+    <header id="header-nav">
+        <div class="navbar navbar-dark navbar-expand-lg">
+            <div class="container d-flex align-items-center justify-content-between pt-1 pb-1 nav-container">
+                <img src="/images/lobby white.webp" alt="Logo da Lobby Arquitetura" id="brand-logo-2" draggable="false">
+                <p class="text-center d-none d-md-block nav-name mb-0 px-5 fw-bolder">Lobby - Arquitetura de Interiores</p>
+                <p class="text d-block d-md-none nav-name mb-0 fw-bolder lobby-text-fluid">Lobby <br>Arquitetura de Interiores</p>
+                <button type="button" class="navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#menu-dropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu-dropdown">
+                    <ul class="navbar-nav nav-pills d-flex align-items-center">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#projects" class="nav-link">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#clients" class="nav-link">Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./contact.html#contact" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <div data-bs-spy="scroll" data-bs-target="#header-nav">
+        <!--HERO SECTION-->
+        <main id="home" class="">
+            <!--Left Content-->
+            <div class="container banner d-sm-block d-md-block d-lg-flex">
+                <div class="container d-flex flex-column container-hero-left">
+                    <h1 class="motto mx-5 text h1 hidden-element translate-up">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                            <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                        </svg>
+                        TIRE O SEU <br>SONHO DO PAPEL
+                    </h1>
+                    <p class="mx-5 hidden-element translate-left">
+                        Com a ajuda da Lobby Arquitetura, você pode transformar qualquer espaço seu em um ambiente aconchegante e acolhedor. <br>
+                        Solicite agora o seu orçamento através da página de
+                        <a href="https://api.whatsapp.com/send/?phone=5541997597544&text&type=phone_number&app_absent=0" title="Falar com Lobby Arquitetura no Whatsapp" class="text-reset hero-link">
+                            <strong>formulário</strong>
+                        </a>.
+                    </p>
+                    <a href="./contact.html" draggable="false" class="btn-link fade-up">
+                        <button class="btn btn-hero btn-block shadow-sm mx-5 px-4">Solicitar Orçamento</button>
+                    </a>
+                </div>
+                <!--Right Content-->
+                <div class="container d-flex justify-content-center">
+                    <!-- <img src="#" draggable="false" alt="#" class="mx-5 mt-5 logo-hero-section"> -->
+                </div>
+            </div>
+        </main>
+
+        <!--ABOUT SECTION-->
+        <section id="about" class="mb-5">
+            <div class="container d-sm-block d-md-flex flex-row pt-5 pb-5 container-about">
+                <div class="container hidden-element translate-left container-about-txt">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-question-diamond my-2 hidden-element translate-up" viewBox="0 0 16 16">
+                        <path d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.48 1.48 0 0 1 0-2.098zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"/>
+                        <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+                    </svg>
+                    <h2 class="motto text text-center h2">Sobre a Lobby Arquitetura</h2>
+                    <p class="mx-5 text text center">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit optio, modi rerum amet incidunt numquam hic ipsa praesentium ullam quis? 
+                        Dicta odit facere sint sapiente illum mollitia.<br><br>    Exercitationem amet facere earum eaque cum consequatur repellat voluptates reprehenderit, 
+                        commodi sint et ullam, nisi, perspiciatis doloribus.
+                    </p>
+                    <!--Left Content-->
+                    <div id="social-links" class="mb-4">
+                        <a href="https://www.instagram.com/lobby.arq/" target="blank" title="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                            </svg>
+                        </a>
+                        <a href="https://api.whatsapp.com/send/?phone=5541997597544&text&type=phone_number&app_absent=0" target="blank" title="Whatsapp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                            </svg>
+                        </a>
+                    </div>
+                <!--Right Content-->
+                </div>
+                <div class="container hidden-element translate-right container-about-img">
+                    <img src="./images/lobby_architect.webp" draggable="false" loading="lazy" alt="Vanessa, Arquiteta da Lobby Arquitetura" class="img-fluid img-architect">
+                    <p class="text img-text-footer">Vanessa S. Justen M. <br>
+                        Fundadora da Lobby Arquitetura de Interiores</p>
+                </div>
+            </div>
+        </section>
+
+        <!--SERVICES SECTION-->
+        <section id="services" class="pb-5 my-3">
+            <div class="container hidden-element translate-right d-flex flex-column">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-card-checklist my-2 hidden-element translate-up" viewBox="0 0 16 16">
+                    <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                    <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0M7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0"/>
+                </svg>
+                <h2 class="motto text text-center h2">Serviços que oferecemos</h2>
+                <p class="mx-5 text text center">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit optio, modi rerum amet incidunt numquam hic ipsa praesentium ullam quis? 
+                    Dicta odit facere sint sapiente illum mollitia minima.
+                </p>
+            </div>
+            <div class="container hidden-element translate-up">
+                <div class="container d-flex flex-row justify-content-around align-items-center mx-auto">
+                    <div class="feedback-container hidden-element translate-down">
+                        <p class="text text-center">Feedback 1</p>
+                        <img src="https://via.placeholder.com/300x200" alt="Feedback 1" class="img-fluid px-1"> 
+                    </div>
+                    <div class="feedback-container hidden-element translate-down">
+                        <p class="text text-center">Feedback 2</p>
+                        <img src="https://via.placeholder.com/300x200" alt="Feedback 2" class="img-fluid px-1"> 
+                    </div>
+                    <div class="feedback-container hidden-element translate-down">
+                        <p class="text text-center">Feedback 3</p>
+                        <img src="https://via.placeholder.com/300x200" alt="Feedback 3" class="img-fluid px-1"> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--PROJECTS SECTION-->
+        <section id="projects" class="my-3">
+            <div class="container pt-5 pb-5 d-flex flex-column">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-pencil-square my-2 hidden-element translate-up" viewBox="0 0 16 16">
+                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                </svg>
+                <h2 class="motto text text-center h2 hidden-element translate-left">Conheça os nossos Projetos</h2>
+                <p class="mx-5 text text center hidden-element translate-left">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit optio, modi rerum amet incidunt numquam hic ipsa praesentium ullam quis? 
+                    Dicta odit facere sint sapiente illum mollitia minima.
+                </p>
+                <!--Project Carousel-->
+                <div id="carousel-images" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" id="carousel-about">
+                        <div data-bs-interval="4500" class="carousel-item active">
+                            <img class="d-block w-100" src="https://via.placeholder.com/950x200" loading="lazy" alt="#" draggable="false">
+                        </div>
+                        <div data-bs-interval="4500" class="carousel-item">
+                            <img class="d-block w-100" src="https://via.placeholder.com/950x200" loading="lazy" alt="#" draggable="false">
+                        </div>
+                        <div data-bs-interval="4500" class="carousel-item">
+                            <img class="d-block w-100" src="https://via.placeholder.com/950x200" loading="lazy" alt="#" draggable="false">
+                        </div>
+                        <div data-bs-interval="4500" class="carousel-item">
+                            <img class="d-block w-100" src="https://via.placeholder.com/950x200" loading="lazy" alt="#" draggable="false">
+                        </div>
+                        <div data-bs-interval="4500" class="carousel-item">
+                            <img class="d-block w-100" src="https://via.placeholder.com/950x200" loading="lazy" alt="#" draggable="false">
+                        </div>
+                    </div>
+                    <div class="carousel-indicators">
+                        <button type="button" title="Primeira imagem" class="active" data-bs-target="#carousel-images" data-bs-slide-to="0"></button>
+                        <button type="button" title="Segunda imagem" data-bs-target="#carousel-images" data-bs-slide-to="1"></button>
+                        <button type="button" title="Terceira imagem" data-bs-target="#carousel-images" data-bs-slide-to="2"></button>
+                        <button type="button" title="Quarta imagem" data-bs-target="#carousel-images" data-bs-slide-to="3"></button>
+                        <button type="button" title="Quinta imagem" data-bs-target="#carousel-images" data-bs-slide-to="4"></button>
+                    </div>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="container mt-5">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-6 col-md-6 col-lg-4 feedback-container hidden-element translate-up text-center">
+                            <img src="https://via.placeholder.com/300x200" alt="Feedback 1" class="img-fluid"> 
+                            <p class="text">Casa JV</p>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4 feedback-container hidden-element translate-down text-center">
+                            <img src="https://via.placeholder.com/300x200" alt="Feedback 2" class="img-fluid"> 
+                            <p class="text">Casa RS</p>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4 feedback-container hidden-element translate-right text-center">
+                            <img src="https://via.placeholder.com/300x200" alt="Feedback 3" class="img-fluid"> 
+                            <p class="text">Studio 1312</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--CLIENT FEEDBACK SECTION-->
+        <section id="clients" class="pb-5 my-3">
+            <div class="container pt-4 pb-5 hidden-element translate-right d-flex align-items-center flex-column">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-chat-left-dots my-2 hidden-element translate-up" viewBox="0 0 16 16">
+                    <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                    <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                </svg>
+                <h2 class="motto text text-center h2">Feedback de nossos clientes</h2>
+                <p class="mx-5 text text center">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit optio, modi rerum amet incidunt numquam hic ipsa praesentium ullam quis? 
+                    Dicta odit facere sint sapiente illum mollitia minima.
+                </p>
+            </div>
+            <div class="container d-flex flex-row justify-content-around align-items-center mx-auto">
+                <div class="feedback-container hidden-element translate-down">
+                    <p class="text text-center">Feedback 1</p>
+                    <img src="https://via.placeholder.com/300x200" alt="Feedback 1" class="img-fluid px-1"> 
+                </div>
+                <div class="feedback-container hidden-element translate-down">
+                    <p class="text text-center">Feedback 2</p>
+                    <img src="https://via.placeholder.com/300x200" alt="Feedback 2" class="img-fluid px-1"> 
+                </div>
+                <div class="feedback-container hidden-element translate-down">
+                    <p class="text text-center">Feedback 3</p>
+                    <img src="https://via.placeholder.com/300x200" alt="Feedback 3" class="img-fluid px-1"> 
+                </div>
+            </div>
+        </section>
+
+        <!--BUDGET SECTION-->
+        <section id="contact-cta" class="py-5">
+            <div class="container pb-5 d-flex flex-column justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-star mb-3 hidden-element translate-down" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                </svg>
+                <h2 class="motto text text-center hidden-element translate-up">Você está quase lá!</h2>
+                <p class="mx-5 text text-center hidden-element translate-up">
+                    Clique no botão abaixo e solicite agora um orçamento sem compromisso para tirar o seu projeto do papel.
+                </p>
+                <a href="./contact.html" draggable="false" class="fade-up btn-cta-budget">
+                    <button type="button" class="btn btn-budget btn-block shadow-sm mx-5 px-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                            <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                        </svg>
+                        Ir à página de orçamentos
+                    </button>
+                </a>
+            </div>
+            
+        </section>
+    </div>
+
+    <!--FOOTER SECTION-->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted footer-body">
+        <section class="d-flex justify-content-center justify-content-lg-between p-3 border-bottom" id="info">
+            <div class="me-5 d-none d-lg-block mt-1">
+                <span>Siga <strong>Lobby</strong> nas redes sociais ou entre em contato via Whatsapp:</span>
+            </div>
+            <div id="footer-social-links">
+                <a href="https://www.instagram.com/lobby.arq/" target="blank" title="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                    </svg>
+                </a>
+                <a href="#" target="blank" title="Whatsapp" id="contact-whatsapp">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+        <!--Logo and text-->
+        <section id="info-container" class="pt-5 border-bottom">
+            <div class="container text-center text-md-start">
+                <div class="row">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" id="footer-info">
+                        <img src="./images/lobby white.webp" draggable="false" alt="Logo da Lobby Arquitetura" id="footer-logo">
+                    </div>
+                    <!--Section Column-->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-menu1">
+                        <p class="text-uppercase fw-bold mb-4">
+                            LINKS
+                        </p>
+                        <p>
+                            <a href="https://www.instagram.com/lobby.arq/" class="text-reset" title="Ir ao Instagram de Lobby Arquitetura">Instagram</a>
+                        </p>
+                        <p>
+                            <a href="https://api.whatsapp.com/send/?phone=5541997597544&text&type=phone_number&app_absent=0" title="Falar com Lobby Arquitetura no Whatsapp" class="text-reset">Whatsapp</a>
+                        </p>
+                        <p>
+                            <a href="#contact" title='"Ir à "Orçamentos"' class="text-reset">Orçamentos</a>
+                        </p>
+                    </div>
+                    <!--Section Column-->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <p class="text-uppercase fw-bold mb-4">
+                        Lobby®
+                        </p>
+                        <!-- <p>
+                            CNPJ: 00.000.000/0001-00
+                        </p> -->
+                        <p>
+                            Arquitetura de Interiores
+                        </p>
+                    </div>
+                    
+                    <!--Section Column-->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!--Contact-->
+                        <p class="text-uppercase fw-bold mb-4">Contato</p>
+                        <p class="contact-footer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pin-map" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"/>
+                                <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+                            </svg>
+                            Rua Ivan Ulbrich, 974 - Vila Pinheirinho, São Mateus do Sul - PR, 83900-000, Brasil</p>
+                        <p class="contact-footer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar-check" viewBox="0 0 16 16">
+                                <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                            </svg>
+                        De segunda a sexta, das 08:00 às 19:00h.
+                        </p>
+                        <p class="contact-footer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                            </svg>
+                            +55 41 9759-7544</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Copyright -->
+        <div class="text-center p-3" id="footer-foot-note" style="background-color: var(--color-background-footer);">
+            <span>© 2022 Copyright: Lobby Arquitetura de Interiores</span>
+            <span class="text-center" id="footer-developed-by">
+                Website desenvolvido por <a href="https://wa.me/42998640821" target="blank" title="Conversar com Jean Justen em Whatsapp">Jean Justen</a>
+            </span>
+        </div>
+    </footer>
+
+    <!--LIBRARIES-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> <!--Bootstrap JS CDN-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script> <!-- JQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+    <script src="./js plugins/jquery.mask.min.js"></script> <!--Email Validation Plugin-->
+    <!-- <script type="text/javascript" src="./public/emailjs.js" defer></script> -->
+</body>
+</html>
