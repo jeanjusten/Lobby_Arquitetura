@@ -65,6 +65,10 @@ body {
     background-color: var(--colorBody);
 }
 
+body-div {
+    overflow-x: hidden;
+}
+
 /*----------------------------*/
 /*LOADING SCREEN*/
 /*----------------------------*/
