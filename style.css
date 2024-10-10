@@ -206,24 +206,29 @@ body-div {
 
 .translate-left {
     transform: translateX(-200px);
+    overflow-x: hidden !important;
 }
 
 .translate-right {
     transform: translateX(200px);
+    overflow-x: hidden !important;
 }
 
 .translate-up {
     transform: translatey(80px);
+    overflow-x: hidden !important;
 }
 
 .translate-down {
     transform: translatey(-80px);
+    overflow-x: hidden !important;
 }
 
 .show {
     opacity: 1 !important;
     filter: none;
     transform: translateX(0);
+    overflow-x: hidden !important;
 }
 
 @media(prefers-reduced-motion) {
