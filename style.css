@@ -61,7 +61,7 @@ body {
     width: 100vw;
     height: 100vh;
     margin: 0;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     background-color: var(--colorBody);
 }
 
@@ -554,6 +554,7 @@ header {
 /*----------------------------*/
 #services {
     min-height: 500px;
+    overflow: hidden;
 }
 
 .bi-card-checklist {
