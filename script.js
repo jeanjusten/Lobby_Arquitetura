@@ -29,5 +29,16 @@ $(document).ready(function(){
     $("#tel").mask("(00)00000-0000", {
         placeholder: "(00)00000-0000"
     })
-})
+//#endregion
+
+//#region See more Button JQuery //
+    $(".btn-see-more").click(function(){
+        if ($(".btn-see-more").text() == "Ver mais") {
+            $(".btn-see-more").text("Ver menos");
+        } else {
+            $(".btn-see-more").text("Ver mais");
+        };
+        $(".container-hidden").slideToggle();
+    })
+});
 //#endregion

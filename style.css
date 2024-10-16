@@ -12,9 +12,10 @@
     --colorButton:  #b9903d;
     --colorButtonHover: #d6a239;
     --color-btn-hero:  #ce9522;
+    --color-btn-secondary: #000000;
 
     --colorTextPrimary: #ffffff;
-    --colorTextSecondary: #000000;
+    --colorTextSecondary: #1f1f1f;
     --colorTextFooter: #444343;
 
     --colorScroll: #d6a239;
@@ -561,6 +562,17 @@ header {
     fill: var(--color-btn-hero);
 }
 
+.services-icon {
+    display: flex;
+    margin: 0 auto !important; 
+    max-height: 110px;
+    transition: .5s ease-in-out;
+}
+
+.services-icon:hover {
+    transform: scale(1.08);
+}
+
 /*----------------------------*/
 /*PROJECTS SECTION*/
 /*----------------------------*/
@@ -587,6 +599,154 @@ header {
 .bi-pencil-square:hover {
     transform: scale(1.05);
     fill: var(--color-btn-hero);
+}
+
+.btn-primary {
+    background-color: var(--color-btn-secondary) !important;
+    border-color: transparent !important;
+    transition: .5s ease-in-out !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--colorButtonHover) !important;
+}
+
+.project-title {
+    text-transform: uppercase;
+    font-family: var(--secondary-font);
+    font-weight: 900;
+    font-style: normal;
+}
+
+.project-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-container  h5 {
+    transition: 0.5s ease-in-out;
+}
+
+.project-container:hover h5 {
+    color: var(--color-btn-hero) !important;
+}
+
+.project-container a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    color: var(--color-btn-hero);
+}
+
+.project-desc {
+    font-weight: 600 !important;
+    color: rgb(102, 102, 102) !important;
+}
+
+.project-container .project-img {
+    transition: all 0.3s ease;
+}
+
+.project-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.project-container .overlay-text {
+    font-size: 1.5rem;
+}
+
+.project-container a:hover .project-img {
+    filter: grayscale(100%);
+}
+
+.project-container a:hover .overlay {
+    opacity: 1;
+}
+
+.container-hidden {
+    display: none;
+}
+
+.project-carousel-title {
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.project-carousel-title a {
+    text-decoration: none;
+    color: var(--colorTextPrimary);
+    transition: 0.5s ease-in-out;
+}
+
+.project-carousel-title a:hover {
+    text-decoration: none;
+    color: var(--color-btn-hero);
+}
+
+.project-carousel-title:hover {
+    transform: scale(1.05);
+    color: var(--color-btn-hero) !important;
+}
+
+.project-carousel-title svg {
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.project-carousel-title:hover svg {
+    transform: rotate(180deg);
+    fill: var(--color-btn-hero) !important;
+}
+
+.carousel-caption-left {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 10px 15px;
+    z-index: 3; 
+    font-size: 1.2rem;
+}
+
+.carousel-caption-left h3 {
+    color: var(--colorTextPrimary) !important;
+    font-family: var(--secondary-font) !important;
+    font-weight: 800 !important;
+}
+
+.carousel-item {
+    position: relative; 
+}
+
+.carousel-caption-left h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.carousel-overlay-container {
+    position: relative;
+}
+
+.carousel-overlay-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.42); 
+    z-index: 2; 
 }
 
 /*----------------------------*/
@@ -651,6 +811,29 @@ header {
     transform: scale(1.05);
     fill: var(--color-btn-hero);
 }
+
+.budget-img {
+    max-width: 100%; 
+    margin-right: 20px;
+    width: 400px; 
+    height: auto; 
+    object-fit: contain; 
+}
+
+.container-budget {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.container-about-img {
+    max-width: 100%; 
+    margin-right: 20px;
+    width: 700px; 
+    height: auto; 
+    object-fit: contain; 
+}
+
 /*----------------------------*/
 /*CONTACT SECTION*/
 /*----------------------------*/
@@ -675,11 +858,11 @@ header {
     border-color: transparent;
     transition: 0.5s ease-in-out;
     color: var(--colorTextPrimary);
-    background-color: var(--colorButtonHover) ;
+    background-color: var(--color-btn-hero) !important;
 }
 
 .btn-send:hover {
-    background-color: var(--colorButton) !important;
+    background-color: var(--colorButtonHover) !important;
 }
 
 #brand-logo-3 {
