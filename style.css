@@ -359,7 +359,7 @@ header {
     background-repeat: no-repeat;
     width: 100%;
     overflow: hidden;
-    background-image: url(/images/lobby_bg.webp);
+    background-image: url(/images/lobby_bg1.png);
     background-size: cover;
     background-position: bottom center;
     height: 100vh; 
